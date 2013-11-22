@@ -10,7 +10,7 @@
         "A POST to /data": {
           topic: function () {
             request({
-              uri: 'http://localhost:8080/data',
+              uri: 'http://localhost:3000/data',
               method: 'POST',
               body: fs.readFileSync('./test/sample_data/sample-small.json'),
               headers: {
