@@ -4,7 +4,7 @@
       , fs			= require('fs')
       ;
 
-  vows.describe('SQL framework API').addBatch({
+  vows.describe('Classifier API').addBatch({
     "When using the API": {
       "testing the push delivery endpoint": {
         "A POST to /data": {
