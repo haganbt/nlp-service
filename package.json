@@ -9,7 +9,7 @@
     "express": "3.4.0",
     "jade": "0.34.x",
     "strftime": "0.6.1",
-    "natural": "~0.1.24"
+    "limdu": "~0.3.0"
   },
   "devDependencies": {
     "vows": "0.7.0",
