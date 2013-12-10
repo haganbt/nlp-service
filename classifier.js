@@ -13,17 +13,19 @@ var spamClassifier = new limdu.classifiers.EnhancedClassifier({
 
 spamClassifier.trainBatch([
 	{ input: "cheap replica watch es", output: 'spam' },
+	{ input: "cheap replica watch to buy", output: 'spam' },
 	{ input: "your watch is ready", output: 'nospam' },
 	{ input: "I don't know if this works on windows", output: 'nospam' },
 	{ input: "cheap windows !!!", output: 'spam' },
 ]);
 
 
-console.log(spamClassifier.classify("cheap clocks !!!"));
-console.log(spamClassifier.classify("I don't know if this is a replica of windows"));
-console.log(spamClassifier.classify("replica"));
-console.log(spamClassifier.classify("your"));
-console.log(spamClassifier.classify("watch"));
-		
-		
+
+console.log(spamClassifier.classify("cheap clocks !!!", 1));
+console.log(spamClassifier.classify("I don't know if this is a replica of windows", 1));
+console.log(spamClassifier.classify("replica", 1));
+console.log(spamClassifier.classify("your", 1));
+console.log(spamClassifier.classify("watch", 1));
+	
+	
 console.log(JSON.stringify(spamClassifier));

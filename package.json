@@ -9,7 +9,8 @@
     "express": "3.4.0",
     "jade": "0.34.x",
     "strftime": "0.6.1",
-    "limdu": "~0.3.0"
+    "limdu": "~0.3.0",
+    "serialization": "~0.2.0"
   },
   "devDependencies": {
     "vows": "0.7.0",
